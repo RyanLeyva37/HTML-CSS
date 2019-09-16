@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab&display=swap');
+
+.navigation {
+  font-family: 'Antic Slab', serif;
+  background-color: #A8DADC;
+  overflow: hidden;
+  text-align: center;
+  color:white;
+    position: fixed; /* Set the navbar to fixed position */
+      width: 100%; /* Full width */
+              margin-top: -45px; /* Add a top margin to avoid content overlay */
+}
+
+
+
+/* Style the links inside the navigation bar */
+.navigation a {
+  float: left;
+  color: #251605;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+
+/* Change the color of links on hover */
+.navigation a:hover {
+  animation-name: hover-animation;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+  @keyframes hover-animation {
+    100% {
+      background-color: #E63946;
+      color:white;
+    }
+  }
+
+
+
+/* Add a color to the active/current link */
+.navigation a.active {
+  background-color: #E63946;
+  color: white;
+}
